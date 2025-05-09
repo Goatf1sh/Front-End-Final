@@ -8,24 +8,20 @@
   <meta name="description" content="">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="" type="image/x-icon">
+  <script src="corys.js"></script>
 </head>
 
 <body>
    hello teacher!
-   (make them able to add and delete classes)
-
-   <form>
-    <label for="classes">Current Classes:</label>
-    <select id="class" name="class">
-      <option value="1">ID</option>
-      <option value="2">ID</option>
-      <option value="3">ID</option>
-      <option value="4">ID</option>
-    </select>
 <br><br>
+   <form>
     Need to make a new class? Fill out the form (this will add it to the database)<br>
-    <label for="fname">Class ID:</label>
-    <input type="text" id="classID" name="classID"><br><br>
+    <label >Class ID:</label>
+    <input type="text" id="ID" name="classID"><br>
+    <label >Class Name:</label>
+    <input type="text" id="title" name="classID"><br>
+    <button id="addBtn">add</button>
+    <br><br>
     Need to delete an old class? Fill out the form (this will add it to the database)<br>
     <label for="classes">Current Classes:</label>
     <select id="class" name="class">
@@ -35,7 +31,7 @@
       <option value="4">ID</option>
     </select>
     <br>
-      <button>delete</button>
+      <button id="deleteBtn">delete</button>
     </form>
 
 </body>
